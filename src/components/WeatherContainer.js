@@ -48,22 +48,7 @@ const WeatherContainer = () => {
                 desc: data.weather[0].main,
                 city: data.name   
             }))
-            // .then(response => response.data.setWeatherData({
-            //     temp: response.data.main.temp,
-            //     humidity: response.data.main.humidity,
-            //     desc: response.data.weather[0].main,
-            //     city: response.data.name
-
-            // }))
-            // .then(data => console.log(data))
-        
-                // console.log(response)
-                // this.setWeatherData()
-            
-            // console.log(response.data)
-            // const {results} = response.data
-            // console.log(results)
-            // setWeatherData(response.data)
+          
         }
         catch (error) {
             console.log(error)
