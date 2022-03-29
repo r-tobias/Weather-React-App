@@ -2,9 +2,10 @@ import { useState } from "react";
 import '../styles/Weather.css';
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import { API_KEY } from "../services/constants";
 
 const WeatherContainer = () => {
-    const API_KEY = '91e9e321d024b27dfe45fcdad9a58c98'
+
     const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?'
     // zip={zip code},{country code}&appid={API key}
     const [searchQuery, setSearchQuery] = useState();
